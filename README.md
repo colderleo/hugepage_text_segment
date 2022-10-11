@@ -1,6 +1,6 @@
 
 ## Summary
-This is a lib tool for mapping text segment to hugepage, in order to reduce cache miss.
+This is a lib tool for mapping text segment to hugepage, in order to reduce tlb miss.
 
 Tested in linux x86-64 centos7/debian/ubuntu
 
@@ -28,7 +28,7 @@ Hugepagesize:       2048 kB
 
 ./huge_demo
 ```
-after execute demo, you can check the demo's memory map info by the follwing cmd:
+after execute demo, you can check the demo's memory map with the follwing cmd:
 ```sh
 $ cat /proc/`pgrep huge_demo`/maps
 ```
